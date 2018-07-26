@@ -16,7 +16,7 @@
     <!-- Windows packaging fixes -->
     <platform name="windows">
         <config-file target="package.appxmanifest" parent="/Package/Capabilities">
-            <Capability Name="internetClient" />
+            <!-- Capability Name="internetClient" / -->
             <Capability Name="privateNetworkClientServer" />            
             <!--<Capability Name="internetClientServer" />-->
             <!--<Capability Name="enterpriseAuthentication" />-->
