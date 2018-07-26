@@ -6,7 +6,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-windows-manifest"
     version="0.1.0">
-    <name>Sample plugin to modify Windows Manifest file</name>
+    <name>Windows Manifest file</name>
     <description>Visual Studio Tools for Apache Cordova - Sample plugin to modify Windows Manifest file</description>
     <license>MIT</license>
     <keywords>cordova,taco,visualstudio,vs,visual,studio</keywords>
@@ -16,18 +16,8 @@
     <!-- Windows packaging fixes -->
     <platform name="windows">
         <config-file target="package.appxmanifest" parent="/Package/Capabilities">
-            <!--<Capability Name="internetClient" />-->
-            
-            <!--
-                Provides inbound and outbound access to Intranet networks that have an authenticated domain controller,
-                or that the user has designated as either home or work networks.  Inbound access to critical ports is always blocked.
-                
-                More information: https://msdn.microsoft.com/en-us/library/windows/apps/hh464936.aspx
-                    
-                <Capability Name="privateNetworkClientServer" />
-            -->
-            <Capability Name="privateNetworkClientServer" />
-            
+            <Capability Name="internetClient" />
+            <Capability Name="privateNetworkClientServer" />            
             <!--<Capability Name="internetClientServer" />-->
             <!--<Capability Name="enterpriseAuthentication" />-->
             <!--<Capability Name="musicLibrary" />-->
